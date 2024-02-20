@@ -1,0 +1,95 @@
+/************************** DYNAMIC FORMAT STYLES **************************/
+.parent.dynamic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sides {
+  margin-top: 105vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.right,
+.left {
+  display: inline-block;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 10;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+/* shift left side over because the parallax library messes up positioning and I can't fix it */
+.left {
+  left: -15vw;
+}
+
+.dynamic .center {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+}
+
+.dynamic .center > div {
+  width: 30vw;
+}
+
+.dynamic .background {
+  position: absolute;
+  top: -30vh;
+  width: 100vw;
+  height: 120%;
+  background-image: url("./assets/backgroundFront.png");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  opacity: 0.5;
+  filter: blur(15px);
+}
+
+/************************** CLEAN FORMAT STYLES **************************/
+
+.parent.clean {
+  margin: 5rem;
+}
+
+.clean .previews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .parent.clean {
+    margin: 2rem 0.5rem;
+  }
+}
+
+/************************** COMMON STYLES **************************/
+
+.fullCardContainer,
+.searchBarContainer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 30;
+}

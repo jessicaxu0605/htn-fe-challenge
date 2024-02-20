@@ -1,0 +1,36 @@
+.solidButton {
+  background-color: rgb(210, 220, 250) !important;
+  /* border-radius: 2em; */
+  padding: 0.25em 1em;
+  margin: 0.5rem;
+  color: rgb(55, 45, 80);
+  font-weight: bold;
+
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.solidButton:hover,
+.solidButton:focus {
+  box-shadow: 0 0 30px rgb(220, 130, 255), 0 0 10px rgb(220, 130, 255);
+  background-color: white !important;
+  color: rgb(200, 165, 200) !important;
+}
+
+.outlineButton {
+  border-color: rgb(210, 220, 250);
+  border-width: 2px;
+  /* border-radius: 2em; */
+  padding: 0.25em 1em;
+  margin: 0.5rem;
+  color: rgb(210, 220, 250);
+  font-weight: bold;
+
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+.outlineButton:hover,
+.outlineButton:focus {
+  box-shadow: 0 0 30px rgb(220, 130, 255), inset 0 0 10px rgb(220, 130, 255);
+  text-shadow: 0 0 30px rgb(220, 130, 255), 0 0 10px rgb(220, 130, 255);
+  border-color: white;
+  color: white;
+}

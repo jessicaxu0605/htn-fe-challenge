@@ -1,0 +1,62 @@
+.parent {
+  color: rgb(210, 220, 250);
+}
+
+.parent h2 {
+  font-family: "Space Mono";
+  font-size: 1.5rem;
+}
+.parent h1 {
+  font-family: "Space Mono";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.scrollIndicator {
+  font-family: "Space Mono";
+  font-weight: bold !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  animation: flash 0.3s infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 30px rgb(220, 130, 255), 0 0 10px rgb(220, 130, 255),
+      0 0 50px rgb(220, 130, 255);
+  }
+}
+
+.dynamic .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.clean .buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .clean .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.buttonContainer button {
+  width: 15rem;
+  padding: 0.5em 1em;
+}
+
+.glow {
+  text-shadow: 0 0 30px rgb(220, 130, 255), 0 0 10px rgb(220, 130, 255);
+}

@@ -1,0 +1,62 @@
+.parent {
+  position: fixed;
+  width: 50vw;
+  max-height: 80vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 0 20px rgb(220, 130, 255);
+  color: white;
+  z-index: 50;
+}
+
+.parent h2 {
+  padding: 0.5rem;
+  font-family: "Space mono";
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.bookmarks {
+  padding: 1rem 0 4rem;
+}
+
+.closeButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButton {
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+
+.closeButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+
+.closeButton:focus {
+  border-color: white;
+  border-width: 2px;
+  border-radius: 2rem;
+  box-shadow: 0 0 30px rgb(220, 130, 255), inset 0 0 10px rgb(220, 130, 255);
+}
+
+.closeBackground {
+  background-color: rgba(45, 10, 40, 0.8);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}

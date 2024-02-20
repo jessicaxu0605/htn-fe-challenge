@@ -1,0 +1,53 @@
+.parent {
+  position: relative;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: rgb(210, 220, 250);
+  margin: 2rem;
+}
+
+.parent form {
+  background-color: black;
+  box-shadow: 0 0 20px rgb(220, 130, 255);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent .textFields {
+  position: relative;
+  background-color: rgb(210, 220, 250);
+  width: 80%;
+  display: block;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.parent .textFields:focus {
+  outline: none;
+  border: none;
+  z-index: 10;
+  box-shadow: 0 0 30px rgb(220, 130, 255), 0 0 10px rgb(220, 130, 255);
+  background-color: white;
+  color: rgb(200, 165, 200);
+}
+
+.loginButton {
+  margin: 1.5rem 0;
+  padding: 0.5em 1em;
+  border-radius: 2rem;
+  width: 80%;
+}
+
+.loginError {
+  color: red;
+}
