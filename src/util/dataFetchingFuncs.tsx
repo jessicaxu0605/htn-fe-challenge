@@ -1,7 +1,9 @@
 import { AuthContextData } from "../contexts/AuthContext";
 import { TEvent } from "./eventTypes";
 
-const EVENTS_ENDPOINT = "https://api.hackthenorth.com/v3/graphql";
+const EVENTS_ENDPOINT =
+  "https://cors-anywhere-htn-956feded7ff4.herokuapp.com/https://api.hackthenorth.com/v3/graphql";
+//"https://api.hackthenorth.com/v3/graphql";
 
 export function getAllEventsPreview(
   loginData: AuthContextData
